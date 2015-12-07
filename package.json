@@ -1,0 +1,15 @@
+{
+  "name": "BMO",
+  "version": "1.0.0",
+  "description": "An xmpp client,in nodejs, based on node-xmmp. The main usacase is hipchat, although it should work for other jabber based chats.",
+  "main": "server.js",
+  "author": "Chris Zioutas",
+  "dependencies": {
+    "express": "^4.10.4",
+    "moment": "^2.10.6",
+    "node-xmpp-client": "^3.0.0",
+    "node-xmpp-core": "^5.0.0",
+    "node-xmpp-jid": "^2.1.0",
+    "underscore": "^1.8.3"
+  }
+}
