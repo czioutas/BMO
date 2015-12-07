@@ -6,3 +6,23 @@
 
 An xmpp client,in nodejs, based on node-xmmp. The main usacase is hipchat, although it should work for other jabber based chats.
 
+---
+
+# Howto
+
+The `server.js` file contains the main functionality to get started.
+Complete the required option parameters to connect your Bot's Account with the client.
+
+Main variables required:
+  * jid: 'hipchatNumber@hipchatHost',
+  * password: 'Password',
+  * mentionName: 'bmo'
+
+---  
+  
+# Events Exposed
+
+At the moment the following events are being exposed for use:
+* connected
+* joinedRoom
+* messageReceived
