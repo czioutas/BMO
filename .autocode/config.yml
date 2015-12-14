@@ -1,0 +1,7 @@
+name: drakoumel/BMO
+author:
+  name: Chris
+  email: z.chris.92@gmail.com
+  url: null
+copyright: 2015 Chris
+description: 'An xmpp client,in nodejs, based on node-xmmp. The main usacase is hipchat, although it should work for other jabber based chats.'
