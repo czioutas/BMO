@@ -6,7 +6,6 @@
 
 An xmpp client,in nodejs, based on node-xmmp. The main usacase is hipchat, although it should work for other jabber based chats.
 
----
 
 # Howto
 
@@ -18,8 +17,25 @@ Main variables required:
   * password: 'Password',
   * mentionName: 'bmo'
 
----  
-  
+Default Bunyan configuration:
+  `options.bunyan = {
+    name: 'bmo',
+    streams: [{
+      level: 'info',
+      path: 'bunyanLog.log'
+    }]
+  };`
+
+Pass the specified variables above for custom configuration.
+
+
+# Directives
+
+The folder Directive is meant to be used as a location to store different "command" bundles.
+As exposed in the repository, the directive default is used for standard functions, such as help.
+
+The Directives are chosen from the `controller.js`
+
 # Events Exposed
 
 At the moment the following events are being exposed for use:
