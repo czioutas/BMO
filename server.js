@@ -9,7 +9,7 @@ var oc             = {};
 
 var chatOptions = {
   jid: process.env.JID || 'jid',
-  password: process.env.Padssword || 'password!',
+  password: process.env.Padssword || 'password',
   mentionName: process.env.MentionName || '@mentionName',
   host: 'chat.hipchat.com',
   muc: 'conf.hipchat.com'

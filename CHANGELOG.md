@@ -1,3 +1,7 @@
+# 1.2.1
+  Created logger.js so that bunyan can be used globally after initialization
+  in the bot. However this has removed customization of bunyan settings. For now.
+  
 # 1.1.1
   Fixed missing callback parameter in default.js::default
 

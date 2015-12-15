@@ -1,7 +1,8 @@
 var commander = require('../lib/commander.js')
 var ssh = [
-  "user@server1",
+  "user@server1"
 ];
+
 
 module.exports.status = function(callback, all) {
   if (all === undefined) {
