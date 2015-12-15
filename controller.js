@@ -12,6 +12,10 @@ module.exports = function(msg, outputChannel) {
     fpm.status(function(data) {
       outputChannel.sendOutput(msg.medium, data);
     });
+  } else if (workingMsgBody.indexOf("fpm restart") > -1) {
+    fpm.restart(function(data) {
+      outputChannel.sendOutput(msg.medium, data);
+    });
   } else if (workingMsgBody.indexOf('help') > -1) {
     main.help(function(data) {
       outputChannel.sendOutput(msg.medium, data);

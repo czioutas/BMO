@@ -1,6 +1,6 @@
 var commander = require('../lib/commander.js')
 
-module.exports.default = function() {
+module.exports.default = function(callback) {
   callback('Unrecognized command.');
 }
 
@@ -11,6 +11,6 @@ module.exports.ls = function(callback) {
   });
 }
 
-module.exports.help = function() {
+module.exports.help = function(callback) {
   callback('Following commands available: "cmd" [terminal cmd],"bot uptime","roll"');
 }

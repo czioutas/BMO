@@ -10,7 +10,7 @@ var oc             = {};
 var chatOptions = {
   jid: process.env.JID || 'jid',
   password: process.env.Padssword || 'password!',
-  mentionName: process.env.MentionName || '@bmo',
+  mentionName: process.env.MentionName || '@mentionName',
   host: 'chat.hipchat.com',
   muc: 'conf.hipchat.com'
 }
@@ -21,7 +21,7 @@ var oc = new outputChannel.Channel(bmo);
 bmo.connect();
 
 bmo.jabber.on('connected', function() {
-  bmo.joinRoom('chatroomName', 'Username');
+  bmo.joinRoom('room', 'Name');
 });
 
 bmo.jabber.on('joinedRoom', function(roomJid) {

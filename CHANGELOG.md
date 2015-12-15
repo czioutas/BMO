@@ -1,3 +1,6 @@
+# 1.1.1
+  Fixed missing callback parameter in default.js::default
+
 # 1.1.0
 Enhancements
   * Added Bunyan for logging. (Every message received and send is logged)
