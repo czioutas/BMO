@@ -15,9 +15,11 @@ Fill in `config/default.json` with your details to connect.
 It is advised however to use environment variables to handle your credentials.
 So:
 
-`$ export NODE_ENV=production`   
-`$ mkdir production.json //fill in your details`   
-`$ node server.js`   
+`
+$ export NODE_ENV=production
+$ mkdir production.json //fill in your details
+$ node server.js 
+`   
 
 
 # Directives
