@@ -6,7 +6,7 @@
 
 An xmpp client,in nodejs, based on node-xmmp. The main usacase is hipchat, although it should work for other jabber based chats.
 
-# If you want to help ![Check the TODO] (https://github.com/drakoumel/BMO/blob/master/TODO.md)
+##### If you want to help [Check the TODO] (https://github.com/drakoumel/BMO/blob/master/TODO.md)
 
 # Howto
 
@@ -19,6 +19,7 @@ It is advised however to use environment variables to handle your credentials.
 
     $ export NODE_ENV=production
     $ cp default.json production.json //fill in your details
+    $ grunt
     $ node server.js
 
 # Directives
