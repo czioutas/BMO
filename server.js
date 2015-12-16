@@ -26,7 +26,7 @@ bmo.jabber.on('connected', function() {
 });
 
 bmo.jabber.on('joinedRoom', function(roomJid) {
-  //bmo.announce(roomJid);
+  bmo.announce(roomJid);
 });
 
 bmo.jabber.on('messageReceived', function(msg) {
