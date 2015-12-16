@@ -1,28 +1,12 @@
-var fpm = require('./Directives/fpm');
-var main = require('./Directives/default');
+var Directive = require('./Directives/Directive.js');
 
 module.exports = function(msg, outputChannel) {
-  var workingMsgBody = msg.body;
-
-  if (workingMsgBody.indexOf("ls") > -1) {
-    main.ls(function(data) {
-      outputChannel.sendOutput(msg.medium, data);
-    });
-  } else if (workingMsgBody.indexOf("fpm status") > -1) {
-    fpm.status(function(data) {
-      outputChannel.sendOutput(msg.medium, data);
-    });
-  } else if (workingMsgBody.indexOf("fpm restart") > -1) {
-    fpm.restart(function(data) {
-      outputChannel.sendOutput(msg.medium, data);
-    });
-  } else if (workingMsgBody.indexOf('help') > -1) {
-    main.help(function(data) {
-      outputChannel.sendOutput(msg.medium, data);
-    });
-  } else {
-    main.default(function(data) {
-      outputChannel.sendOutput(msg.medium, data + '"' + workingMsgBody + '"');
-    });
+  if (Directive[msg.command] === undefined) {
+    outputChannel.sendOutput(msg.medium, 'Unrecognized command: ' + msg.command);
+    return;
   }
+
+  Directive[msg.command](function(data) {
+      outputChannel.sendOutput(msg.medium, data);
+  });
 }

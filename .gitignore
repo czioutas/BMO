@@ -2,4 +2,5 @@
 npm-debug.log
 .idea
 bunyanLog.log
-/config/production.json
+/config/production.js
+/Directives/Directive.js

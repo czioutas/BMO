@@ -30,6 +30,5 @@ bmo.jabber.on('joinedRoom', function(roomJid) {
 });
 
 bmo.jabber.on('messageReceived', function(msg) {
-  msg.body = msg.body.replace(bmo.mentionName, '');
   controller(msg,oc);
 });

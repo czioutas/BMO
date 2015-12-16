@@ -3,4 +3,5 @@ node_js:
   - "4.2.1"
 
 before_script:
+  - grunt -d -v --stack
   - npm install

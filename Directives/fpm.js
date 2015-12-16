@@ -1,8 +1,14 @@
-var commander = require('../lib/commander.js')
+var commander = require('../lib/commander.js');
 var config    = require('config');
 var ssh       = config.get('SSH');
 
-module.exports.status = function(callback, all) {
+/*
+My grunt foo is low at the moment. But I want to add the filename aka fpm
+and camelCase the function name only on the generated Directve.js file
+so the function in fpms.js::status() would become fpmStatus()
+*/
+
+module.exports.fpmStatus = function(callback, all) {
   if (all === undefined) {
     all = true;
   }
@@ -18,9 +24,9 @@ module.exports.status = function(callback, all) {
       });
     });
   }
-}
+};
 
-module.exports.restart = function(callback, all) {
+module.exports.fpmRestart = function(callback, all) {
   if (all === undefined) {
     all = true;
   }
@@ -36,4 +42,4 @@ module.exports.restart = function(callback, all) {
       });
     });
   }
-}
+};
