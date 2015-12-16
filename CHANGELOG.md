@@ -1,3 +1,7 @@
+# 1.3.1
+  Fix travis-ci
+  Remove express
+
 # 1.3.0
   Change the config from .json to .js. The aim of this change is to make the
   configs future proof, in case we want have multiple config files that extend or
