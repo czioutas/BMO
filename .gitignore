@@ -2,3 +2,4 @@
 npm-debug.log
 .idea
 bunyanLog.log
+/config/production.json

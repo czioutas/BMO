@@ -1,7 +1,6 @@
 var commander = require('../lib/commander.js')
-var ssh = [
-  "user@server1"
-];
+var config    = require('config');
+var ssh       = config.get('SSH');
 
 module.exports.status = function(callback, all) {
   if (all === undefined) {

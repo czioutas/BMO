@@ -10,23 +10,14 @@ An xmpp client,in nodejs, based on node-xmmp. The main usacase is hipchat, altho
 # Howto
 
 The `server.js` file contains the main functionality to get started.
-Complete the required option parameters to connect your Bot's Account with the client.
+Fill in `config/default.json` with your details to connect.
 
-Main variables required:
-  * jid: 'hipchatNumber@hipchatHost',
-  * password: 'Password',
-  * mentionName: 'bmo'
+It is advised however to use environment variables to handle your credentials.
+So:
 
-Default Bunyan configuration:
-  `options.bunyan = {
-    name: 'bmo',
-    streams: [{
-      level: 'info',
-      path: 'bunyanLog.log'
-    }]
-  };`
-
-Pass the specified variables above for custom configuration.
+`$ export NODE_ENV=production
+$ mkdir production.json //fill in your details
+$ node server.js`
 
 
 # Directives

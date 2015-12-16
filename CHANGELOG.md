@@ -1,6 +1,10 @@
+# 1.2.4
+  Added credentials to the config file.
+  Main file now reads those in order to connect.
+
 # 1.2.3
   Added config. Any configuration for logger/bunyan should be set under
-  config/default.json (production.json vs develoption.json will follow).
+  config/default.json (production.json vs development.json will follow).
 
 # 1.2.2
   Command un-recognized returns message send to BMO.
