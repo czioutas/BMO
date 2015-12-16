@@ -13,14 +13,12 @@ The `server.js` file contains the main functionality to get started.
 Fill in `config/default.json` with your details to connect.
 
 It is advised however to use environment variables to handle your credentials.
-So:
 
-`
-$ export NODE_ENV=production
-$ mkdir production.json //fill in your details
-$ node server.js 
-`   
+**Start your app server:**
 
+    $ export NODE_ENV=production
+    $ mkdir production.json //fill in your details
+    $ node server.js
 
 # Directives
 
