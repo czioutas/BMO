@@ -1,7 +1,11 @@
+# 1.2.2
+  Command un-recognized returns message send to BMO.
+  Mention Name is now removed before it reaches the controller.js
+
 # 1.2.1
   Created logger.js so that bunyan can be used globally after initialization
   in the bot. However this has removed customization of bunyan settings. For now.
-  
+
 # 1.1.1
   Fixed missing callback parameter in default.js::default
 

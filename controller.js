@@ -2,7 +2,7 @@ var fpm = require('./Directives/fpm');
 var main = require('./Directives/default');
 
 module.exports = function(msg, outputChannel) {
-  var workingMsgBody = msg.body.replace('@bmo', '');
+  var workingMsgBody = msg.body;
 
   if (workingMsgBody.indexOf("ls") > -1) {
     main.ls(function(data) {
@@ -22,7 +22,7 @@ module.exports = function(msg, outputChannel) {
     });
   } else {
     main.default(function(data) {
-      outputChannel.sendOutput(msg.medium, data);
+      outputChannel.sendOutput(msg.medium, data + '"' + workingMsgBody + '"');
     });
   }
 }
