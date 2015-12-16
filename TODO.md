@@ -3,4 +3,6 @@
      so the function in fpms.js::status() would become fpmStatus().
  [ ] Add a queue historian in order to throttle incoming requests and avoid collision
  [x] Create a yaml or similar notation for connecting controller to directive.
- [ ] Find a better way than nested ifs for the controller decision making phase.
+ [x] Find a better way than nested ifs for the controller decision making phase.
+ [ ] bunyanlog search through chat
+ [ ] bunyanlog through web front end
