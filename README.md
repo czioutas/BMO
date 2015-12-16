@@ -17,7 +17,7 @@ It is advised however to use environment variables to handle your credentials.
 **Start your app server:**
 
     $ export NODE_ENV=production
-    $ mkdir production.json //fill in your details
+    $ cp default.json production.json //fill in your details
     $ node server.js
 
 # Directives
