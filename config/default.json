@@ -1,0 +1,9 @@
+{
+  "Logger": {
+    "name": "bmo",
+    "streams": [{
+      "level": "info",
+      "path": "bunyanLog.log"
+    }]
+  }
+}
