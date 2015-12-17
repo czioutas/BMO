@@ -17,10 +17,9 @@ It is advised however to use environment variables to handle your credentials.
 
 **Start your app server:**
 
-    $ export NODE_ENV=production
     $ cp default.json production.json //fill in your details
     $ grunt
-    $ node server.js
+    $ NODE_ENV=production node server.js 
 
 # Directives
 
